@@ -206,6 +206,8 @@ function storage(){
 
 // FASE DE PRUEBA
 
+// FASE DE PRUEBA
+
 //FILTRADO PRODUCTOS.//
 function render(listaProductosConStock) {
     catalogo.innerHTML = ""
