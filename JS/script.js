@@ -86,6 +86,7 @@ let productosTotales = document.getElementById("productosTotales")
 let cart = [];
 
 
+
 listaProductosConStock.forEach((producto) =>{
     // BODY
     let cardBody = document.createElement("div");
@@ -104,7 +105,7 @@ listaProductosConStock.forEach((producto) =>{
     cardPrice.innerText = `Precio: $${producto.precio}`;
     // STOCK
     let cardStock = document.createElement("p");
-    cardStock.id = ("stockActualProductos")
+    cardStock.stock = ("stockActualProductos")
     cardStock.classList.add('card-stock');
     cardStock.innerText = `Stock : ${producto.stock} unidades`;
     // BUTTON
@@ -112,6 +113,7 @@ listaProductosConStock.forEach((producto) =>{
     cardButton.classList.add('btn', 'btn-primary');
     cardButton.innerText = 'Comprar'
     cardButton.setAttribute("identify", producto.id)
+    // cardButton.setAttribute("stock", producto.stock)
     cardButton.addEventListener('click', addProductToCart)
 
 
@@ -125,15 +127,24 @@ listaProductosConStock.forEach((producto) =>{
 })
 
 function addProductToCart(evento){
-    cart.push(evento.target.getAttribute('identify'))
+    cart.push(evento.target.getAttribute('identify'));
+    // cart.push(evento.target.getAttribute('stock'));
+    // cuando me trae el stock, le quiero restar 1 unidad
+    
     renderCart()
+
+
     Toastify({
         text: "Agregado al carrito!",
         style: {
           background: "linear-gradient(to right, #72e501, #00c73e)",
         }
       }).showToast();
+
+    
 }
+loadCartFromStorage();
+renderCart();
 
 function renderCart(){
     storage();
@@ -221,6 +232,11 @@ function storage(){
     localStorage.setItem('cart', JSON.stringify(cart))
 }
  
+function loadCartFromStorage(){
+    if(localStorage.getItem('cart') !== null){
+        cart = JSON.parse(localStorage.getItem('cart'))
+    }
+}
 
 //FILTRADO PRODUCTOS.//
 function render(listaProductosConStock) {
