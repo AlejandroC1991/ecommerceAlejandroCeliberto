@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Luxury Market</title>
+    <meta name="description"
+        content="En este sitio encontrarás información actualizada acerca del mundo de la economía y finanzas globales.">
+    <meta name="author" content="Lic. Alejandro D. CELIBERTO">
+    <meta name="copyright" content="luxuryMarket">
+    <!-- open graph -->
+    <meta property="og:title" content="Luxury Market">
+    <meta property="og:site_name" content="Luxury Market">
+    <meta property="og:url" content=>
+    <meta property="og:description" content="En este sitio encontrarás vehiculos de lujo.">
+    <meta property="og:type" content="">
+    <meta property="og:image" content=./images/ferrari.jpeg> </head> <body>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse configNavBar" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="./index.html">Vehiculos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="./sections/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+            <div>
+                <input class="form-control mr-sm-2 estiloFiltrado" id="categoria" type="search" placeholder="Buscar"
+                    aria-label="Search">
+                <button id="filtrar" class="estiloFiltrado btn btn-primary">Filtrar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- GALERIA DE PUBLICACIONES -->
+
+    <div id="fecha"></div>
+    <div>
+        <input class="estiloSaludar form-control mr-sm-2" type="text" placeholder="Nombre" id="ingresaNombre">
+        <button type="button" class=" btn btn-primary" id="bienvenido"> Saludar! </button>
+        <p class="mensajeBienvenida" id="imprimeNombre"></p>
+    </div>
+    <div id="bienvenida"></div>
+    <div id="catalogo" class="row"></div>
+    <div id="catalogoDeApis" class="row"></div>
+
+    <!-- // cart // -->
+
+
+
+    <!-- START SECTION SHOPPING CART -->
+
+    <div class="styleSection">
+        <table id="agregaProductoAlCarrito" class="table table-bordered " style="width: 100%;">
+            <thead id="titulosCart">
+                <tr class="table-primary">
+                    <td scope="col">Item</td>
+                    <td scope="col">Producto</td>
+                    <td scope="col">Cantidad</td>
+                    <td scope="col">Acción</td>
+                    <td scope="col">Total</td>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+
+            <tfoot id="productosTotales">
+                <tr>
+                    <th scope="row" colspan="3">Total Productos</th>
+                    <td><button class="btn btn-danger btn-sm" id="vaciarElCarrito">Vaciar carrito</button></td>
+                    <td id="totalPriceCart">$</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="redes">
+            <a href="mailto:alejandro.celiberto@gmail.com"><img class="icon" src="./images/icons8-gmail.svg"
+                    loading="lazy" alt="icono de gmail"></a>
+            <a href="https://wa.me/1122563087"><img class="icon" src="./images/icons8-whatsapp.svg" loading="lazy"
+                    alt="icono de whatsapp"></a>
+            <a href="https://www.facebook.com/alejandro.celiberto"><img class="icon"
+                    src="./images/icons8-facebook-nuevo.svg" loading="lazy" alt="icono de facebook"></a>
+            <a
+                href="https://www.google.com.ar/maps/place/Obelisco/@-34.6037389,-58.3837644,17z/data=!3m1!4b1!4m5!3m4!1s0x4aa9f0a6da5edb:0x11bead4e234e558b!8m2!3d-34.6037389!4d-58.3815704"><img
+                    class="icon" src="./images/icons8-google-maps.svg" loading="lazy" alt="icono de google maps"></a>
+        </div>
+
+        <p class="copyright">Designed by Lic. Alejandro D. CELIBERTO
+            &copy; Copyright 2022</p>
+
+
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

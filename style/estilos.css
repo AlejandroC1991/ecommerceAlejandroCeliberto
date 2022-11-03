@@ -1,0 +1,336 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+
+
+.nombreProducto {
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    padding-left: 10px;
+  }
+  .card-price{
+    color: green;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    padding-left: 10px;
+  }
+  .yearProducto{
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: .8rem;
+    display: flex;
+    padding-left: 10px;
+  }
+  .card-stock{
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: .8rem;
+    display: flex;
+    padding-left: 10px;
+  }
+  .ubicacionProducto{
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: .7rem;
+    display: flex;
+    padding-left: 10px;
+    
+  }
+
+  h2 {
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  header {
+    background-color: lightslategray;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+  }
+
+.navbar{
+  height: 110px;
+}
+
+
+  .card-img{
+      width: 19rem;
+      height: 13.5rem;
+      
+      object-fit: cover;
+      border-start-end-radius: 15px;
+      border-start-start-radius: 15px;
+      
+  }
+
+  /* BOTONES */
+
+.botonComprar {
+    width: 95%;
+    margin-bottom: 10px;
+    
+  }
+
+  .propiedadesCard {
+      margin-bottom: 20px;
+      border-radius: 15px;
+      -webkit-box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+      box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+      width: 19rem;
+    padding-left: 0px;
+    height: 25rem;
+      
+      
+  }
+
+  .icon{
+      width: 3rem;
+      height: 3rem;
+      
+  }
+
+  img.icon {
+      margin-right: 40px;
+  }
+
+
+
+  .formulario {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+  
+  .espaciosFormulario {
+    margin-bottom: 40px;
+  }
+  
+  @media (min-width: 400px) {
+    .formulario {
+      width: 50%;
+    }
+  }
+
+  .configNavBar {
+      
+    display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 75px;
+      
+      
+  }
+
+  .espacioNavBar{
+
+    margin-top: 30px;
+    
+  }
+
+  .redes {
+      margin-top: 30px;
+  }
+
+  .copyright {
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .ajustarMobile  {
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+    img.icon{
+      margin: 1rem;
+    }
+   
+  }
+
+  /* /ESTILOS PARA EL NUEVO CATALOGO/ */
+
+#catalogo{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+#fecha{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+#bienvenida{
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+#stockActualProductos{
+ text-align: start;
+ padding-left: 40px;
+ margin-top: 40px;
+}
+
+
+
+.imagenProductoComprado {
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
+ 
+
+}
+
+.carrito{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* //BOTON FILTRADO// */
+.estiloFiltrado{
+  width: 40%;
+  display: inline-block;
+  align-items: center;
+  justify-content: end;
+  margin-right: 10px;
+  
+}
+
+
+
+/* //.// */
+
+.titulosDelCarrito{
+  display: inline-block;
+  align-items: center;
+  width: 30%;
+
+}
+
+
+.imgProductoComprado{
+  width: 8rem;
+  height: 7rem;
+  border-radius: 0px;
+  padding-top: 1rem;
+  
+}
+
+.ubicacionBotonFiltro{
+  display: inline-block;
+}
+
+
+.styleSection {
+  display: flex; 
+  align-items: center;
+   justify-content: space-evenly; 
+   width: 100%;
+}
+
+
+.estiloSaludar{
+  width: 20%;
+  display: inline-block;
+  align-items: center;
+  justify-content: end;
+  margin-right: 10px;
+  
+}
+
+.mensajeBienvenida {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+#catalogoDeApis{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.propiedadesApi {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+  width: 18rem;
+padding-left: 0px;
+height: 18rem;
+font-size: 1.5rem;
+}
+
+.imagenApi{
+
+  width: 18rem;
+  height: 18rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
